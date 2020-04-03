@@ -1,0 +1,3 @@
+List the order in which the nodes would be printed out if the following tree is traversed according to the In-Order algorithm. Please separate node names using spaces or commas.
+[|js|]
+[{make_answer('a','string',5,word_list_equality(inOrderAnswer),10)}]
