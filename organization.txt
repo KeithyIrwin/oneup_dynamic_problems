@@ -1,0 +1,40 @@
+
+Top Level Directories
+=====================
+problems
+    - dynamic problems which only use Lua code (contained or 
+      from libraries) but don't involve any outside files
+programming_problems
+    - problems which rely on the programinterface.lua library 
+      to run code in other languages
+libraries
+    - any code which contains useful functions which might be able
+      to be used in the several different problems.  Some code from
+      existing problems should be copied or relocated here
+
+Organization
+============
+
+problems and programming_problems
+    - Top directory: course
+    - Inside directory: topic or type of material covered by the problem
+    - Each problem should then have its own directory
+        - Should contain:
+	  - The set-up code for the problem
+	     - setup.lua
+          - The template code for the problem
+             - template.txt
+                 * If no rich text is needed, use .txt
+             - template.rtf or template.odt
+	         * If rich text is needed
+             - template_1.*, template_2.*
+                 * If problem has multiple parts
+          - Additional information about the problem or the code which
+             isn't vital, but could be informative, if such exists.
+             This is also where discussion should usually go.
+             - comments.txt
+
+libraries
+    - Top directory: course or subject matter
+    - Subdirectories usually won't be needed, but can be used if appropriate
+    - Files should be .lua files	 
