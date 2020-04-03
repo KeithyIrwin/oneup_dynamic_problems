@@ -1,0 +1,6 @@
+  What is the content of the stack pile after all of the following statements execute?  List the bottom of the stack first and put commas between names.
+
+StackInterface<String> pile = new ArrayStack<String>();
+[|ops|]
+
+[{make_answer("stack","String",3,word_list_equality(result),10,displayAns)}]
