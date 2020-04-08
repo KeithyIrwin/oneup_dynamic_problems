@@ -1,6 +1,15 @@
 --[[
     This is the class like struct for a lua stack push, pop, peak, is empty
+    
+    v1.0
 -- ]]
+
+Config = {
+  names = {'Jane', 'Jess', 'Jill', 'Jim', 'Jamal','Javon'};
+  -- Names to be used in problem
+  numOps = 4;
+  -- Number of operations to be executed
+}
 
 Stack = {   list = {},
             length = 0, --Keeps track of how big table is Note -1 when used
@@ -27,8 +36,8 @@ Stack = {   list = {},
 
             isEmpty = function(self)
                 if (self.length > 0) then
-                    return false
-                else
+                        return false
+            else
                     return true
                 end
 
@@ -58,8 +67,7 @@ Stack = {   list = {},
 
 }
 
-names = {'Jane', 'Jess', 'Jill', 'Jim', 'Jamal','Javon'}
-operations = {'push' ,'pop', 'peek'}
+operations = {'push' ,'pop', 'peek'} -- vestigial table
 
 function question3() --IF the length is >= 2 do all else either end at least six functions and none
     q3Stack = Stack:copy()
@@ -71,14 +79,14 @@ function question3() --IF the length is >= 2 do all else either end at least six
     local opsOutput = ""
 
     --Add the first three entries
-    for i=1,3 do 
-        local name = names[math.random(#names)]
+    for i=1,math.random(3,6) do 
+        local name = Config.names[math.random(#Config.names)]
         q3Stack:push(name)
         opsOutput = opsOutput .. 'pile.push("'..name..'");<BR>\n'
     end
     
     actions = { --Sort of like a switch statement
-        [1] = function () local name = names[math.random(#names)] q3Stack:push(name) return 'pile.push("'..name..'");<BR>\n' end,
+        [1] = function () local name = Config.names[math.random(#Config.names)] q3Stack:push(name) return 'pile.push("'..name..'");<BR>\n' end,
         [2] = function () q3Stack:pop() return 'pile.pop();<BR>\n' end,
         [3] = function () q3Stack:peak() return 'pile.peek();<BR>\n' end,
         [4] = function () q3Stack:push(q3Stack:pop()) return 'pile.push(pile.pop());<BR>\n' end,--push pop
@@ -87,7 +95,7 @@ function question3() --IF the length is >= 2 do all else either end at least six
     }
 
     local i = 0
-    while i<=3 do
+    while i<=Config.numOps-1 do
         i = i+1
         case = math.random(#actions) --get random actions
 

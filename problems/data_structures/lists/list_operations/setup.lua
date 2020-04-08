@@ -1,15 +1,24 @@
+-- Re-implementing lists in Lua
+
+-- This could be done with a normal dictionary table seeing 
+-- as dictionaries use the same principals as Java lists
+-- only more efficiently
+
+letters = {'A', 'B', 'C', 'D', 'E'}
+operations = {'add', 'addSpef'}
+local opCount = 3 -- Number of list operations to be performed
+
 function problem2 ()
     local list = {}
     local ops = {}
 
     for i=1,3 do
-        local letter =letters[math.random(1,#letters)]
+        local letter = letters[math.random(1,#letters)]
         table.insert(list, letter)
         ops['add' .. tostring(i-1)] = letter            
     end
 
     local i=1
-    local opCount = 3
 
     while i <= 5 and opCount <= 6 do  
         local operation = operations[math.random(1, #operations)]
@@ -33,7 +42,7 @@ function problem2 ()
             local number = math.random(1, #list)
             ops[operation .. tostring(i+2)] = number            
             table.remove(list, number)
-            opCount = opCount + 1 
+            opCount = opCount + 1
             i = i + 1
             
             
@@ -110,9 +119,6 @@ function makeQuestion(obj)
 end
 end
     
---Main--
-letters = {'A', 'B', 'C', 'D', 'E'}
-operations = {'add', 'addSpef'}
 
 --p2List, p2Ops = problem2()
 --toString(p2List)
@@ -127,6 +133,7 @@ function escapeCSV (s)
   end
   return s
 end
+
 --serializes answer table to a comma separated string
 function toCSV (tt)
   local s = ""
@@ -135,6 +142,7 @@ function toCSV (tt)
   end
   return string.sub(s, 2)      -- remove first comma
 end
+
 -- displayAns to be used as last parameter to show a correct answer to the students
 displayAns=toCSV(p2List)
 word_list_equality = function(wl)
@@ -159,4 +167,3 @@ word_list_equality = function(wl)
     return {success=true,value=pts}
   end
 end
-

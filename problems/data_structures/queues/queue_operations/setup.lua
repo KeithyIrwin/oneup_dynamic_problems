@@ -1,3 +1,10 @@
+
+numOfOps = 3
+pushCount = 3
+popCount = 0
+peakCount = 0
+numStatements = 20 -- @default: 20
+
 Queue = {
             list = {},
             length = 0,
@@ -54,18 +61,14 @@ Queue = {
 
 
 names = {'Jane', 'Jess', 'Jill', 'Jim','Jamal'}
-operations = {'enqueue' ,'dequeue', 'peak'}
+operations = {'enqueue' ,'dequeue', 'peak'} -- Vestigial Table
 
 function question3(qname) --IF the length is >= 2 do all else either end at least six functions and none
     q3Queue = Queue:copy()
-    numOfOps = 3
-    pushCount = 3
-    popCount = 0
-    peakCount = 0
 
     local opsoutput = ""
     --Add the first three entries
-    for i=1,3 do
+    for i=1,math.random(3,5)do
         local name = names[math.random(#names)]
         q3Queue:enqueue(name)
         opsoutput = opsoutput .. qname .. ".enqueue("..name..");<BR>\n"
@@ -80,7 +83,7 @@ function question3(qname) --IF the length is >= 2 do all else either end at leas
 
     }
 
-    for i=0,20 do  -- the number of statements to be diesplayed over the initial 3 additions
+    for i=0,numStatements do  -- the number of statements to be displayed over the initial 3 additions
         --print(q3Stack.length)
 
         case = math.random(#actions) --get random actions
@@ -92,7 +95,7 @@ function question3(qname) --IF the length is >= 2 do all else either end at leas
 
             if(case == 1) then
                 pushCount = pushCount+1
-		local name = names[math.random(#names)]
+		            local name = names[math.random(#names)]
                 if(pushCount <= 5) then --Max is 5 push
                     actions[1](name)
                     opsoutput = opsoutput .. qname .. ".enqueue("..name..");<BR>\n"

@@ -1,5 +1,6 @@
 --[[
     This is the class like struct for a lua stack push, pop, peak, is empty
+    v1.0
 -- ]]
 
 Stack = {   list = {},
