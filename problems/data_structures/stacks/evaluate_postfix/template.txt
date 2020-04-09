@@ -1,0 +1,6 @@
+  Evaluate the following postfix expressions, if a = 2, b = 3, c = 4, d = 5, e=6, and f=1:
+
+
+a) [|postFixA|]
+
+[{make_answer('a','number',5,approximate_equality(postAnwserA,0.1),3,postAnwserA)}]

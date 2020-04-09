@@ -1,0 +1,4 @@
+  If myList is an empty list of strings, what does it contain after the following statements execute? (Note: separate the letters you enter with spaces and/or commas).
+
+[|Question|]
+  [{make_answer('a','string',5,word_list_equality(p2List),10,displayAns)}]
