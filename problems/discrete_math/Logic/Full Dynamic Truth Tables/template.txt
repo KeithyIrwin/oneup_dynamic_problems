@@ -1,0 +1,9 @@
+Evaluate the given statement when: [{if leafMap['P']~=nil then print('P='..tostring(leafMap['P'])) end}]  [{if leafMap['Q']~=nil then print('Q='..tostring(leafMap['Q'])) end}] [{if leafMap['R']~=nil then print('R='..tostring(leafMap['R'])) end}].
+
+[|display|]
+
+
+
+Enter T if the statement is true or F if the statement is false.
+
+[{make_answer('a','string',5,word_list_equality(answer),10,answer)}]
