@@ -1,0 +1,4 @@
+A={[|aString|]}    B={[|bString|]}
+
+What is A∖B?[{make_answer('ans1','number',5,word_list_unordered_equality(subtractionAnswer),10,displayAns)}]
+

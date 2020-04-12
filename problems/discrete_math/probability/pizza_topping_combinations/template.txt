@@ -1,0 +1,1 @@
+While ordering a pizza assume that you can choose from  [|toppings|] different toppings and [|crust|] different crusts. What are the number of unique crust-topping combinations you can make when choosing only one topping? [{make_answer('ans1','number',5,exact_equality(ans),10,ans)}]

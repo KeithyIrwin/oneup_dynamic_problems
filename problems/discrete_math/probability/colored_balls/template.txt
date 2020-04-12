@@ -1,0 +1,2 @@
+A bag has [|blue|] blue balls and [|green|] green balls. What is the probability of drawing a [|color|] ball from the bag? (Please enter your answer in decimal format)  [{make_answer('ans1','number',5,approximate_equality(ans,.015),10,ans)}]
+

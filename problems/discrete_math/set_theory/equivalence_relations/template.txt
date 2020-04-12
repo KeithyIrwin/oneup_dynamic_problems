@@ -1,0 +1,4 @@
+List the ordered pairs in the equivalence relation on the set {[|display|]} produced by the partition {[|p1|]}, {[|p2|]}.  Join your ordered pairs with commas and separate them with spaces (e.g. x,x x,y y,y)
+
+[{make_answer('ans1','number',5,word_list_unordered_comma_joined_equality(ans),10,displayAns)}]
+

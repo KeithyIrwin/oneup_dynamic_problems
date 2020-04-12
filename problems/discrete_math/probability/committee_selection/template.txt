@@ -1,0 +1,2 @@
+ A club consists of [|men|] men and [|women|] women. In how many ways can the club select a committee of [|selectMembers|] people that has at least one man and one woman? [{make_answer('ans1','number',5,exact_equality(ans),10,ans)}]
+

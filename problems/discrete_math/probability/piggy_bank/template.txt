@@ -1,0 +1,2 @@
+ It is known that a piggy bank contains [|coins|] coins which can be pennies, nickels, dimes, and quarters. What is the number of possible distributions of coins in the piggy bank? [{make_answer('ans1','number',5,approximate_equality(ans,0.1),10,ans)}]
+

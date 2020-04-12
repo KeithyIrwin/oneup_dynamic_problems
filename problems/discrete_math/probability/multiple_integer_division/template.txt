@@ -1,0 +1,5 @@
+What is the probability that a positive integer selected at random from the set of positive integers not exceeding [|bound|] is divisible by [|r1|] or [|r2|]?
+
+Enter your answer in decimal format
+
+[{make_answer('ans1','number',5,approximate_equality(ans,0.05),10,ans)}]

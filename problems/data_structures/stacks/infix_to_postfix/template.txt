@@ -1,0 +1,6 @@
+  Convert the following infix expressions to postfix expressions:
+
+a) [|infixStatmentA|]
+
+[{make_answer('a','string',5,string_equality_ignore_spaces(postAnwserA),10,postAnwserA)}]
+

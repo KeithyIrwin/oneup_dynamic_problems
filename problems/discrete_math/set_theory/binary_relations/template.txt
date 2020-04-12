@@ -1,0 +1,11 @@
+Let A = {1,2,3,4} and R = {[|display|]}. Determine which of the following properties R exhibits, if any, by entering T for true if it is of that relation and F for False if it is not of that relation.
+
+
+
+Transitive:[{make_answer('ans1','number',5,string_equality_ignore_spaces(transitiveAnswer),3,transitiveAnswer)}]
+
+Reflexive:[{make_answer('ans2','number',5,string_equality_ignore_spaces(reflexiveAnswer),3,reflexiveAnswer)}]
+
+Symmetric:[{make_answer('ans3','number',5,string_equality_ignore_spaces(symmetricAnswer),3,symmetricAnswer)}]
+
+Antisymmetric:[{make_answer('ans4','number',5,string_equality_ignore_spaces(antisymmetricAnswer),3,antisymmetricAnswer)}]

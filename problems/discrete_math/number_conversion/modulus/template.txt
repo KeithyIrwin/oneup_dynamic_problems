@@ -1,0 +1,1 @@
+What is [|r1|] % [|r2|]? [{make_answer('ans1','number',5,exact_equality(ans),10,ans)}]

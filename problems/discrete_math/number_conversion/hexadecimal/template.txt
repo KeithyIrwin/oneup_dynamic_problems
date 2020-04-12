@@ -1,0 +1,4 @@
+What is [|r1|] converted to Hexadecimal ? [{make_answer('ans1','number',5,string_equality_ignore_spaces(ans),10,ans)}]
+
+
+

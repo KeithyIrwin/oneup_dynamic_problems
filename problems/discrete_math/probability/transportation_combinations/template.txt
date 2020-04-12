@@ -1,0 +1,1 @@
+Leena goes to Harvard. She can travel to school and back in [|numberOfTransportation|] different ways: [|transportationString|] What is the number of all possible unique transportation outcomes? [{make_answer('ans1','number',5,exact_equality(numberOfTransportation*numberOfTransportation),10,numberOfTransportation*numberOfTransportation)}]

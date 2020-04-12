@@ -1,0 +1,1 @@
+What are the number of possible outcomes when a coin is tossed [|n|] times? [{make_answer('ans1','number',5,exact_equality(a),10,a)}]
