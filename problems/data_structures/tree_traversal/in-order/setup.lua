@@ -1,3 +1,9 @@
+-- The size of the `letters` array directly correlates with the size of the resulting tree set
+-- No key in the `letters` array should start with an integer
+-- ex.  8Ball     (Invalid)
+--      EightBall (Valid)
+letters = {'A', 'B','C', 'D', 'E', 'F', 'G', 'H'}
+
 node = {
     left = {},
     right = {},
@@ -147,9 +153,6 @@ function makeGraph()
     end
 end
 
-
---Fuction to find answer for prombles
-letters = {'A', 'B','C', 'D', 'E', 'F', 'G', 'H'}
 makeTree()
 
 graphString = 'digraph G { '
